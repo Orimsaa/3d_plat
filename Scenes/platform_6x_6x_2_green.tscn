@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://7nj1b0ucijcr"]
+
+[ext_resource type="PackedScene" uid="uid://000njoon7awa" path="res://KayKit_Platformer_Pack_1.0_FREE/KayKit_Platformer_Pack_1.0_FREE/Assets/fbx/green/platform_6x6x2_green.fbx" id="1_lox6w"]
+
+[node name="platform_6x6x2_green" instance=ExtResource("1_lox6w")]

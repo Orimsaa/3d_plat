@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dptxdydhi3lx4"]
+
+[ext_resource type="PackedScene" uid="uid://000njoon7awa" path="res://KayKit_Platformer_Pack_1.0_FREE/KayKit_Platformer_Pack_1.0_FREE/Assets/fbx/green/platform_6x6x2_green.fbx" id="1_6pqyj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6pqyj"]
+size = Vector3(1, 1, 0.864258)
+
+[node name="platform_6x6x2_green" instance=ExtResource("1_6pqyj")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="platform_6x6x2_green" index="0"]
+transform = Transform3D(0.0314588, 0, 0, 0, 0.0322231, -1.11022e-16, 0, 8.88178e-16, 0.0124562, 0, -1.0521e-09, 0.00882568)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="platform_6x6x2_green/StaticBody3D" index="0"]
+transform = Transform3D(1.85729, 0, 0, 0, 1.86754, 0, 0, -1.02318e-12, 1.83432, 0, 3.55271e-15, 0.124497)
+shape = SubResource("BoxShape3D_6pqyj")
