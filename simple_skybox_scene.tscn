@@ -2,8 +2,6 @@
 
 [ext_resource type="PackedScene" path="res://Scenes/player.tscn" id="1"]
 [ext_resource type="Texture2D" path="res://25aa1a16b78d63f639b04b8427d4f2d6.jpg" id="2"]
-[ext_resource type="BoxMesh3D" path="res://BoxMesh3D.tres" id="3"]
-[ext_resource type="BoxShape3D" path="res://BoxShape3D.tres" id="4"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_1"]
 panorama = ExtResource("2")
@@ -21,16 +19,6 @@ sky = SubResource("Sky_1")
 environment = SubResource("Environment_1")
 
 [node name="Player" parent="." instance=ExtResource("1")]
-
-[node name="Ground" type="StaticBody3D" parent="."]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
-mesh = SubResource("BoxMesh3D_3")
-transform = Transform3D(10, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, -1, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
-shape = SubResource("BoxShape3D_4")
-transform = Transform3D(10, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, -1, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.898603, 0.438763, 0, 0.146657, 0.300359, 0.942484, 0.413527, 0.846919, -0.334251, 0, 6, 0)
